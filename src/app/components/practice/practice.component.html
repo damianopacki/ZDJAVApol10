@@ -1,0 +1,33 @@
+<h1>1. Za pomocą interpolacji stringa wypisz w widoku swoje imię i wiek. Imię i wiek umieść w polach klasy.</h1>
+
+<h2>Rozwiązanie: </h2>
+<p>My name is {{name}} and I'm {{yearsOld}} old.</p>
+
+<h1>2. Za pomocą property binding stwórz diva, który będzie miał wymiary 100x100 i zielony background.</h1>
+
+<!-- <h3 [innerText]="name"></h3>
+
+<h3 [innerText]="'Damian'"></h3> -->
+
+<h2>Rozwiązanie: </h2>
+
+<div [style.width]="'100px'" [style.height]="'100px'" [style.background-color]="'green'"></div>
+<br>
+<div [style.width]="divHeight" [style.height]="divWidth" [style.background-color]="divColor"></div>
+
+<h1>3. Stworz w klasie pole, które będzie przechowywało liczbę. Stwórz button, który po kliknięciu będzie inkrementował stworzoną liczbę.</h1>
+
+<h2>Rozwiązanie: </h2>
+
+<p>Number of clicks: {{ numberOfClicks }}</p>
+<button (click)="clickListener()">Click!</button>
+
+<h1>4. Przy użyciu two way data binding stworzyli input, który będzie wyświetlał wartość z pola name i reagował na wprowadzone zmiany.</h1>
+
+<h2>Rozwiązanie: </h2>
+<p appImportantText>Current name is: {{ name | uppercase}}</p>
+<input type="text" [(ngModel)]="name">
+
+<ul>
+    <li *ngFor="let item of arrayOfStrings | arrayLength:3">{{ item }}</li>
+</ul>
