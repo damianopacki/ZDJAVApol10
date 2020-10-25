@@ -1,3 +1,6 @@
 <ul>
-    <li *ngFor="let item of users"> {{ item }} </li> 
+    <li *ngFor="let user of users">
+        <span>{{ user.first_name }}</span>
+        <button (click)="deleteUsers(user)">Usuń</button>
+    </li> 
 </ul>
