@@ -8,6 +8,7 @@ import { PracticeComponent } from './components/practice/practice.component';
 import { FormsModule } from '@angular/forms';
 import { ImportantTextDirective } from './components/practice/important-text.directive';
 import { ArrayLengthPipe } from './components/practice/array-length.pipe';
+import { UsersModule } from './modules/users/users.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ArrayLengthPipe } from './components/practice/array-length.pipe';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    UsersModule
   ],
   providers: [],
   bootstrap: [AppComponent]
